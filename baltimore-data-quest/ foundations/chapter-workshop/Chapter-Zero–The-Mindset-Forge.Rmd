@@ -1,0 +1,67 @@
+---
+title: "Chapter Zero – The Mindset Forge"
+author: "Jabir"
+date: "2025-07-22"
+output: html_document
+---
+
+# Chapter Zero: The Mindset Forge 🔥🧠
+_Before we write code, we learn how to think._
+
+---
+
+## 📘 Prerequisite 1: Asking Data-Driven Questions
+<!-- 
+“Before a data scientist opens a dataset, they first open their curiosity.”
+Data isn’t valuable without a question. For example, if we ask “How many households in Greenmount East lack internet?” we can gather relevant data. But asking “Why does Greenmount East have low internet access, and how might that impact education or job access?” leads us to richer insights. Encourage students to start with why, then explore the what and how.-->
+
+### 🧪 Activity: 
+- Go to the [BNIA website](https://bniajfi.org) and browse indicators.
+- Pick one indicator and write 2 questions you could explore using it.
+
+<!-- Example student answers:
+- What is the rate of housing vacancies in Greenmount East?
+- How does that compare to the city average?
+-->
+
+---
+
+## 📘 Prerequisite 2: Thinking Analytically
+<!-- 
+Focus on logical structure: cause vs correlation, identifying variables, comparative logic
+-->
+
+### 🧠 Thought Exercise:
+- "A neighborhood with more vacant homes has higher crime."
+
+- Is this a **causal** statement?
+  
+- What other factors could be involved?
+
+<!--
+This teaches critical skepticism without dismissiveness.
+-->
+
+---
+
+## 🌀 Side Quest: Media Literacy & Mental Expansion
+
+### 🎬 Challenge:
+- Watch an episode from a media source with deep metaphor (The Sandman, Avatar: The Last Airbender)
+- Reflect: What abstract idea is personified? (Dream, Freedom, Anger, Balance)
+- Why does that matter in a data career?
+
+### 📰 Bonus Challenge:
+- Read one article from 2 political news sources
+- List 3 differences in language, visuals, or data use
+
+---
+
+## 🎯 Takeaway:
+Before we *code*, we learn to *question*.  
+Before we *analyze*, we *observe*.  
+Before we *conclude*, we *consider*.
+
+<!-- 
+Encouragement to keep a "data journey journal" — a place for reflection, questions, and notes.
+-->

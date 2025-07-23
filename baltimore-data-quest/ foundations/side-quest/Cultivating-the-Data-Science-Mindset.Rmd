@@ -1,0 +1,90 @@
+---
+title: "Side Quest: Cultivating-the-Data-Science-Mindset"
+author: "Jabir"
+date: "2025-07-22"
+output: html_document
+---
+
+Here’s a refined version of the **"Side Quest"** for your curriculum—designed to sharpen mindset, motivation, and analytical thinking *before* diving into coding. This will serve as foundational mental prep, like the tutorial level before the first dungeon.
+
+---
+
+## 🌱 Side Quest: Cultivating the Data Science Mindset
+
+---
+
+### 🔑 **Quest Objective**
+
+Before we write a single line of code, we’re going to upgrade how we think. This side quest helps you reshape how you **ask questions**, **consume information**, and **observe the world**. These skills form the *foundation* of every great data scientist.
+
+---
+
+## 🧠 Side Quest Breakdown
+
+### 📍**Quest 1: How to Ask Data-Driven Questions**
+
+> *"The quality of your data is only as useful as the quality of your question."*
+
+#### 🧩 Talking Point:
+
+* Think like a detective. You're not just *looking* at data—you’re *interrogating* it.
+* Avoid vague questions like: “Is this good or bad?” Instead ask: “How did X change over time in Y neighborhood?”
+
+#### 🧠 Thought Expansion:
+
+* Show examples of transforming a broad topic into specific questions using BNIA indicators.
+* Teach the difference between **descriptive**, **diagnostic**, and **predictive** questions.
+
+✅ **Challenge Activity:**
+Pick one BNIA indicator (like “Percent of Households with No Internet”) and write 3 data-driven questions about it.
+
+---
+
+### 📍**Quest 2: Think Analytically, Not Emotionally**
+
+> *"To see clearly, we must detach. Let the data lead."*
+
+#### 🧩 Talking Point:
+
+* Explain **analytical thinking** as observing *patterns, connections, and causes*—not personal opinions or assumptions.
+* Emotions are valid—but in analysis, we look for **evidence**.
+
+#### 🧠 Thought Expansion:
+
+* Introduce logical fallacies like confirmation bias.
+* Practice turning hunches into **testable hypotheses**.
+
+✅ **Challenge Activity:**
+Take a common claim from the media (“Crime is increasing in my city”). Use BNIA to find supporting or contradicting data.
+
+---
+
+### 🌌 **Optional Side Quest: Media Literacy + Deeper Meaning in Content**
+
+> *"Behind every story is a data layer—what’s being said, what’s being hidden, and why."*
+
+#### 🧩 Talking Point:
+
+* Decode media like The Sandman or a news headline.
+* Teach students to ask:
+
+  * Who created this?
+  * What is the message?
+  * What data or evidence is being shown?
+  * What is being *left out*?
+
+#### 🧠 Thought Expansion:
+
+* Use an episode from *The Sandman* as a metaphor: e.g., how Dream reflects order, Desire reflects manipulation, etc.
+* Tie this into data: Just like the Endless shape reality, **data shapes perception**.
+
+✅ **Challenge Activity:**
+Watch a scene from a show (or a TikTok trend). Write what the creators want the viewer to feel. Then, think: what story would the **data** behind it tell?
+
+---
+
+## ✨ Mindset Rewards (Level Up):
+
+* Unlock deeper focus and awareness
+* Strengthen your ability to see truth beneath noise
+* Learn to step back, reflect, and refine questions

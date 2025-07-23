@@ -1,0 +1,60 @@
+---
+title: "Readme"
+author: "Jabir"
+date: "2025-07-21"
+output: html_document
+---
+
+# Foundation Module
+
+Welcome to the **Foundation** folder of this curriculum! This directory is designed as the learning basecamp for students participating in this program, especially those analyzing Baltimore neighborhood data using BNIA datasets.
+
+## Purpose
+
+The goal of the Foundation module is to provide:
+
+1. **Essential R and tidyverse skills** to succeed in later modules.
+2. **Function-specific breakdowns** that match the challenges you'll face in each module.
+3. A **build-your-own-adventure style** structure where more advanced students can fast-track through concepts they know, while beginners are guided step-by-step.
+
+## What's Inside?
+
+The Foundation folder contains a series of `.Rmd` (R Markdown) files built around the first 16 chapters of the *R for Data Science (2nd Edition)* book. These are structured to:
+
+* Explain **core tidyverse functions** such as `filter()`, `select()`, `mutate()`, `summarise()`, and `group_by()`.
+* Provide **examples and exercises** that mimic real-world applications, especially using data similar to or from the BNIA repository.
+* Use **Jabir Ghaffar's solutions** as annotated templates to help students understand how to apply each concept.
+
+## How to Use This
+
+* **Start with Chapter 1** and move forward in order unless you’re confident enough to skip ahead.
+* Each `.Rmd` file contains inline explanations, code snippets, and exercises.
+* There’s an optional "Boss Fight" at the end of every 2-3 chapters — a real-world-style challenge problem that tests what you’ve learned.
+
+## Prerequisites
+
+* A basic understanding of how to open RStudio and run `.Rmd` files.
+* Willingness to experiment and fail forward.
+
+## Who This Is For
+
+This material is best for:
+
+* High school graduates or early college students with basic computer literacy.
+* Anyone with interest in learning R and data analysis through storytelling and real-world community data.
+
+## Next Steps
+
+After mastering the Foundation, students will move into specific modules where they:
+
+* Choose a Baltimore neighborhood.
+* Use BNIA data to answer real community questions.
+* Tell data stories using visualizations, summaries, and insights.
+
+Let’s build the foundation strong — and then build Baltimore stories from there!
+
+---
+
+> Created by Jabir Ghaffar
+> Based on "R for Data Science (2nd Edition)"
+> Uses `tidyverse` for all data wrangling and visualization
