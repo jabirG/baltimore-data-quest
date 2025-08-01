@@ -1,0 +1,147 @@
+---
+title: "Chapter 02: The Lens of Truth – Cleaning & Preparing Data"
+author: "Jabir"
+date: "2025-07-28"
+output: html_document
+---
+
+# 🎯 Chapter 2 – Cleaning & Preparing Data
+
+Welcome, Data Apprentice!
+You’ve learned how to look at data, but now comes a new trial: **How do you focus when your dataset has *so many columns*?**
+
+This chapter is all about **choosing what matters, filtering, and preparing data for your first real insights.**
+
+------------------------------------------------------------------------
+
+# 🗡️ Stage 1: Equipping the `tidyverse`
+
+Our toolkit for this chapter is the **tidyverse**, which includes packages like `dplyr`, `tidyr`, `ggplot2`, and more. Think of these as your weapons and armor – they will make data wrangling readable and efficient.
+
+Get data from Jabir Ghaffar Github: [JabirG](https://github.com/jabirG/Tidy-Tuesday-Horror-Movies-Dataset)
+
+```{r}
+# Load the tidyverse and read in your data
+
+
+
+```
+
+------------------------------------------------------------------------
+
+# 🧼 Stage 2: Looking at the Dataset
+
+Our horror movies dataset has already been cleaned for you. Now, let’s inspect it:
+
+```{r}
+# Peek at the first few rows
+
+```
+
+You’ll see columns like `title`, `release_date`, `popularity`, `revenue`, `runtime`, and more.
+
+------------------------------------------------------------------------
+
+# 🧠 Stage 3: Selecting Columns (Focus)
+
+Data often comes with too much information. To make progress, you must **choose the few pieces of information that matter most for your story**.
+
+In R, this is where `select()` comes in.
+
+```{r}
+# Select only the columns you want to focus on
+
+
+```
+
+This narrows down your dataset into **the essentials**.
+
+------------------------------------------------------------------------
+
+# ⏳ Stage 4: Filtering Data
+
+Let’s focus only on movies **released after the year 2000**. To do this, we’ll use the **lubridate package** (a date/time toolkit).
+
+```{r}
+
+
+```
+
+------------------------------------------------------------------------
+
+# 📊 Stage 5: Sorting Data
+
+You can now order your data using `arrange()` to see which movies stand out the most.
+
+```{r}
+
+
+
+```
+
+------------------------------------------------------------------------
+
+# 🧙‍♂️ MINI-BOSS: **The Lens of Truth**
+
+> **Boss Backstory** The Lens of Truth doesn’t make your data dirty; it floods you with so much information that you cannot see what is important.
+>
+> To defeat this boss, you must sharpen your focus.
+
+### **Mission Objectives**
+
+1.  Use `lubridate` to work with the `release_date` column.
+2.  Select **5–7 columns that matter most**.
+3.  Filter for movies released **after the year 2000**.
+4.  Arrange your data by either **popularity** or **revenue**.
+5.  Write a **short explanation** (as a comment) about why you chose these columns.
+
+```{r}
+# Your code goes here:
+# Step 1: Load lubridate (already done above)
+# Step 2: Select your chosen columns
+# Step 3: Filter for movies released after 2000
+# Step 4: Arrange by popularity OR revenue
+
+
+
+# Why these columns? Explain below as a comment:
+# ...
+```
+
+------------------------------------------------------------------------
+
+### **Completion Checklist (0–100%)**
+
+-   [ ] Use `lubridate` (20%)
+-   [ ] Select 5–7 key columns (20%)
+-   [ ] Filter movies after 2000 (20%)
+-   [ ] Sort by a chosen metric (20%)
+-   [ ] Explain why your chosen columns matter (20%)
+
+**HP:** 100 Each checklist item deals 20 HP. Reduce HP to 0 to defeat the boss.
+
+**Reward:** 40 Data Points **Rank:** Apprentice → **Data Explorer**
+
+------------------------------------------------------------------------
+
+# 🧾 Recap
+
+-   You learned to focus on important columns with `select()`.
+-   You filtered rows with `filter()` and `lubridate`.
+-   You sorted your dataset with `arrange()`.
+
+These skills together help you transform messy datasets into something meaningful.
+
+------------------------------------------------------------------------
+
+# 🔮 Preview: Backend Chapter
+
+In the **Backend Chapter for Chapter 2**, we’ll explain **why these functions exist**, the philosophy behind the tidyverse, and how to find help when you’re stuck.
+
+------------------------------------------------------------------------
+
+# ⏭️ Coming Up Next: Chapter 3 – Data Transformation & Exploration
+
+The next chapter takes your clean dataset and helps you **transform and explore** it: grouping, summarizing, and discovering patterns.
+
+------------------------------------------------------------------------

@@ -2,6 +2,8 @@
 
 Welcome to the BNIA-powered R data science curriculum for new-age explorers, early college coders, and future civic data leaders.
 
+**check out the instructor notes directory for grading rubric.**
+
 ## 🌟 Vision
 
 Empower students to explore and analyze Baltimore neighborhoods using real data, real questions, and real code — all while learning the tools of a modern data detective.

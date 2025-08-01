@@ -1,0 +1,193 @@
+---
+title: "Side Quest Project: Style & Precision – Advanced Plot Customization"
+author: "Jabir"
+date: "2025-07-28"
+output: html_document
+---
+
+# 🎨 Side Quest Project – Style & Precision
+*(Extension of Chapter 4 – Visualization & Storytelling)*
+
+**Goal:**  
+Make your plots **more beautiful, clear, and inclusive**.  
+This quest will also introduce **Posit Cloud customization** to help you personalize your coding experience.
+
+> Complete all stages to earn **100 DP (Advanced)**.
+
+---
+
+# Stage 0 (Optional) – Personalize Posit Cloud (0 DP)
+
+Your environment matters!  
+Follow these steps:
+
+1. At the top of Posit Cloud, click **Tools**.
+2. Click **Global Options**.
+3. Select **Appearance**.
+4. Choose a theme or color scheme that makes coding enjoyable.
+
+This won’t give you DP, but it can make your coding journey more comfortable.
+
+---
+
+# Stage 1 – Base Plot (15 DP)
+
+We’ll use the **`mtcars`** dataset (built-in R dataset) to create a simple bar chart of the number of cylinders in cars.
+
+```{r}
+library(ggplot2)
+
+mtcars |>
+  ggplot(aes(x = factor(cyl))) |>
+  geom_bar()
+````
+
+---
+
+# Stage 2 – Color Customization (25 DP)
+
+Now, let’s customize the **bar colors**.
+
+```{r}
+mtcars |>
+  ggplot(aes(x = factor(cyl))) |>
+  geom_bar(fill = "#69b3a2") |>  # soothing teal
+  labs(
+    title = "Car Count by Cylinders",
+    x = "Cylinders",
+    y = "Count"
+  )
+```
+
+---
+
+### Your Task:
+
+Choose **two custom colors** (one for bars, one for the background).
+Update the code above with your own color scheme.
+
+```{r}
+# Your code here
+
+```
+
+> **Earn 25 DP:** Custom plot with your chosen color scheme.
+
+---
+
+# Stage 3 – Accessibility for Color Blind Audiences (20 DP)
+
+Use a **color-blind friendly palette**.
+
+Install and load **`viridis`**:
+
+```{r}
+install.packages("viridis")  # only if you haven't already
+library(viridis)
+
+mtcars |>
+  ggplot(aes(x = factor(cyl), fill = factor(cyl))) |>
+  geom_bar() |>
+  scale_fill_viridis(discrete = TRUE) |>
+  labs(
+    title = "Accessible Colors",
+    x = "Cylinders",
+    y = "Count",
+    fill = "Cylinders"
+  )
+```
+
+**Your Task:**
+Use the `viridis` palette but choose **option = "plasma"`or`"magma"\` instead of default**.
+
+```{r}
+# Your code here
+
+```
+
+> **Earn 20 DP:** Correctly use an accessible palette with a new option.
+
+---
+
+# Stage 4 – Adding Interactivity (30 DP)
+
+Make your plot **interactive** with `plotly`.
+
+```{r}
+install.packages("plotly")  # run once
+library(plotly)
+
+p <- mtcars |>
+  ggplot(aes(x = factor(cyl), fill = factor(cyl))) |>
+  geom_bar() |>
+  scale_fill_viridis(discrete = TRUE)
+
+ggplotly(p)
+```
+
+Now when you hover, you’ll see tooltips.
+
+---
+
+### Your Task:
+
+Make an **interactive plot of mpg vs hp** with points colored by `cyl`.
+
+```{r}
+# Your code here
+
+```
+
+> **Earn 30 DP:** If your interactive plot works and shows correct information.
+
+---
+
+# Stage 5 – Mini Boss: **The Designer** (10 DP)
+
+> *"I love your data… but can you make it **look like art**?
+> Give me one stunning plot that uses a clean theme, custom colors, and labels that make sense. Surprise me!"*
+
+**Instructions:**
+
+1. Choose **any dataset** you want.
+2. Create a **plot of your choice**.
+3. Use:
+
+   * Custom colors
+   * A clean theme (`theme_minimal()`, `theme_light()`, etc.)
+   * Labels that explain what’s shown
+4. Add **one interactive element** (if possible).
+
+---
+
+# 💰 Total Data Points
+
+* Stage 1: 15 DP
+* Stage 2: 25 DP
+* Stage 3: 20 DP
+* Stage 4: 30 DP
+* Mini Boss: 10 DP
+
+**Total: 100 DP**
+
+---
+
+# Reflection
+
+This quest showed you how to:
+
+* Make your plots visually appealing
+* Support accessibility with color-blind palettes
+* Add interactivity for presentations
+* Create visualizations that tell a story
+
+Good design can be the difference between a **boring chart** and one that **wins a data battle!**
+
+
+## Key Concepts Taught in This Quest:
+
+- **Plot customization with fill/colors**
+- **Choosing colors for accessibility (viridis)**
+- **Making plots interactive (plotly)**
+- **Personalizing coding environment (optional)**
+

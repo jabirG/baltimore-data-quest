@@ -1,0 +1,37 @@
+---
+title: "Experience Point Rules"
+author: "Jabir Ghaffar"
+date: "2025-07-28"
+output: html_document
+---
+
+# Data Points Progression Table
+
+**Difficulty Ratings:**
+- ★☆☆ Beginner
+- ★★☆ Apprentice
+- ★★★ Challenger
+- ★★★★ Expert
+
+---
+
+## Chapter 1
+
+### Stage 1: Explore BNIA Website
+- Objective: Navigate BNIA and find an indicator
+- Data Points: 10
+- Difficulty: ★☆☆
+
+### Stage 2: Intro to R
+- Objective: Learn vectors and assignment
+- Data Points: 15
+- Difficulty: ★☆☆
+
+### Stage 3: First Dataset Challenge
+- Objective: Calculate mean from a dataset
+- Data Points: 20
+- Difficulty: ★★☆
+
+### Mini-Boss: Messy Data Mick
+- Data Points: 25
+- Difficulty: ★★☆

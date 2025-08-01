@@ -1,0 +1,157 @@
+---
+title: 'Chapter 01: Welcome to BNIA + Intro to R & Math Foundations'
+author: "Jabir Ghaffar"
+date: "2025-07-30"
+output: html_document
+---
+# 🎮 Stage 1: Welcome + Using the BNIA Website
+
+Welcome to your **first adventure** as a data explorer!  
+This is where you learn that **real-world data lives in places like BNIA (Baltimore Neighborhood Indicators Alliance).**
+
+> **BNIA Website:** [https://bniajfi.org](https://bniajfi.org)
+
+---
+
+## 🕹️ Mini-Mission: Explore the BNIA Website
+
+1. Visit **BNIA**.
+2. Click on **"Vital Signs"**.
+3. Locate your **Community Statistical Area (CSA)**.
+4. Browse through different **Indicators** — pick one that interests you.
+
+*This step is about getting familiar with where data comes from, not analyzing it yet.*
+
+> **Data Points Earned: 10** *(Beginner – Familiarization)*
+
+---
+
+# ⚔️ Stage 2: Why Learn R?
+
+R is a programming language made **specifically for statistics and data**.  
+Before we analyze Baltimore data, we must learn the **language of numbers**.
+
+> Data scientists are like detectives: R is your magnifying glass, and math is your logic.
+
+---
+
+# 🏗 Stage 3: Assigning Values – Objects
+
+The most basic thing in R: **assignment**.
+
+```{r}
+# Assign a number to an object
+x <- 5
+
+# Assign a word (text) to an object
+name <- "BNIA"
+
+# Assign a vector (a group of values)
+scores <- c(85, 90, 95)
+```
+
+---
+
+# 📊 Stage 4: Math in R
+
+R was made for math. Try these:
+
+```{r}
+# Mean (average)
+mean(scores)
+
+# Median (middle value)
+median(scores)
+
+# Minimum and Maximum
+min(scores)
+max(scores)
+
+# Sum
+sum(scores)
+
+# Standard deviation (how spread out)
+sd(scores)
+```
+
+These **built-in functions** will be your best friends.
+Anytime you have a set of numbers, you can summarize them quickly.
+
+> **Pro Tip:** Never be afraid of math in R. The language was created for it.
+
+---
+
+# 🧩 Quick Practice
+
+Try:
+
+1. Create an object called `ages` with 5 numbers of your choice.
+2. Use `mean()`, `median()`, and `sd()` on `ages`.
+
+---
+
+# 🔮 Stage 5: Using Built-in Data
+
+R has **built-in datasets** ready to explore. For example, `mtcars`:
+
+```{r}
+head(mtcars)
+```
+
+This dataset is about cars: miles per gallon, horsepower, weight, etc.
+
+---
+
+# 🧙‍♂️ Mini-Boss Fight – The Statistician’s Ghost
+
+**Description:**
+The Statistician’s Ghost tries to confuse you by hiding patterns in **numbers**.
+Your task: use R’s math functions to reveal them.
+
+---
+
+### **Your Mission**
+
+Using the `mtcars` dataset:
+
+1. Find the **average mpg (miles per gallon)**.
+2. Find the **median horsepower (hp)**.
+3. Find the **minimum and maximum weight (wt)**.
+4. Use `sd()` to see how much mpg varies.
+
+Write your answers in a code chunk:
+
+```{r}
+mean(mtcars$mpg)
+median(mtcars$hp)
+min(mtcars$wt)
+max(mtcars$wt)
+sd(mtcars$mpg)
+```
+
+---
+
+**Victory Condition:**
+Once you answer all 5, the Ghost vanishes.
+
+**Reward:**
+
+* 40 Data Points
+* Badge: **Math Adept**
+
+---
+
+# 🧠 Reflection
+
+* Which math function surprised you?
+* Which one do you think will be most useful in data analysis?
+
+---
+
+# 🧙 Next Chapter
+
+Great work! You’ve explored real data sources and learned **how to use math as a weapon**.
+
+**Coming Next:**
+
+> Chapter 2 – *Cleaning & Preparing Data (Tidyverse)*

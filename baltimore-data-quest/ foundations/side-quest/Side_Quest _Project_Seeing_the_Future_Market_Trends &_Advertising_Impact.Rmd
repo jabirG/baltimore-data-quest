@@ -1,0 +1,171 @@
+---
+title: 'Side Quest Project: Seeing the Future – Market Trends & Advertising Impact'
+author: "Jabir Ghaffar"
+date: "2025-07-31"
+output: html_document
+---
+
+# 🏹 Side Quest Project: Seeing the Future
+*(Extension of Chapter 4 – Visualization & Market Insights)*
+
+**Goal:**  
+Predict trends in company sales based on advertising spending on **TV**, **Radio**, and **Newspaper**.  
+You will be graded step-by-step using **Data Points (DP)**.
+
+> Complete all stages to earn **120 DP (Advanced)**.  
+> This project prepares you for **Chapter 5’s final boss**.
+
+---
+
+# Stage 1 – Data Setup (20 DP)
+
+### 1. Load the Dataset
+
+```{r}
+#Load your packages and your data from the data folder
+
+
+```
+
+**Checkpoint:**
+Write a line of code to:
+
+1. Display the first 10 rows
+2. Count how many rows there are in this dataset
+
+```{r}
+# Your code here
+
+```
+
+> **Earn 20 DP:**
+> If you can load, preview, and count rows correctly.
+
+---
+
+# Stage 2 – Visualizing Relationships (30 DP)
+
+We will explore **Sales vs each advertising channel**.
+
+### Example (TV vs Sales):
+
+```{r}
+library(ggplot2)
+
+ads |>
+  ggplot(aes(x = TV, y = Sales)) |>
+  geom_point() |>
+  geom_smooth(method = "lm", se = FALSE) |>
+  labs(
+    title = "TV Ad Spend vs Sales",
+    x = "TV Ad Spend (thousands)",
+    y = "Sales (thousands)"
+  )
+```
+
+---
+
+### Your Turn:
+
+1. Make a **scatter plot with trend line** for **Radio vs Sales**
+2. Make a **scatter plot with trend line** for **Newspaper vs Sales**
+
+```{r}
+# Your Radio plot here
+
+```
+
+```{r}
+# Your Newspaper plot here
+
+```
+
+> **Earn 30 DP:**
+> Both plots correct and easy to read.
+
+---
+
+# Stage 3 – Correlation Analysis (20 DP)
+
+Correlation shows **how strongly two variables move together**.
+
+Write code to calculate the **correlation matrix** for TV, Radio, Newspaper, and Sales.
+
+```{r}
+# Your code here
+
+```
+
+> **Hint:** Use `select()` to choose columns, then `cor()`.
+
+> **Earn 20 DP:** Correct correlation table.
+
+---
+
+# Stage 4 – Mini Boss: **The Corporate Executive (Target)** (50 DP)
+
+> *“I need a data-driven strategy for our ad budget.
+> Which ad channel is the strongest? Which is weakest? Show me evidence.”*
+
+**Your Task:**
+
+1. Use your three scatter plots and correlation table.
+2. Write a **3-point strategy** answering:
+
+   * Which advertising type works best?
+   * Which one works the least?
+   * Your advice for the future.
+
+Write your answer here (in bullet points):
+
+```
+- 
+- 
+-
+```
+
+> **Earn 50 DP:** If your explanation matches the evidence.
+
+---
+
+# Bonus: Predict Future Sales (Optional +15 DP)
+
+Use a **linear regression model** to predict **Sales** if:
+
+* TV = 200
+* Radio = 40
+* Newspaper = 10
+
+```{r}
+# Example model
+model <- lm(Sales ~ TV + Radio + Newspaper, data = ads)
+
+# Your prediction:
+```
+
+---
+
+# 💰 Total Data Points
+
+* Stage 1: 20 DP
+* Stage 2: 30 DP
+* Stage 3: 20 DP
+* Mini Boss: 50 DP
+* Bonus: +15 DP
+
+**Total: 120 DP (or 135 DP with bonus)**
+
+---
+
+# Reflection
+
+This project taught you how to:
+
+* Visualize relationships
+* Quantify correlations
+* Provide actionable business advice
+* Build a predictive model
+
+These skills are directly connected to **real-world data science and analytics**.
+
+

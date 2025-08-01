@@ -1,0 +1,307 @@
+---
+title: "Chapter01-intro-to-getting data"
+author: "Jabir Ghaffar"
+date: "2025-07-28"
+output: html_document
+---
+
+# **Chapter 1 Backend – “The Path of Data Gathering”**
+
+Now that you’ve learned the fundamentals of R, it’s time to learn how to **bring data into your R world**. This chapter introduces:
+
+* **Importing from Google Sheets**
+* **Importing from GitHub**
+* **Basic Web Scraping**
+
+---
+
+## 1. **Google Sheets**
+
+1. Share your sheet (set it to “Anyone with the link can view”).
+2. Copy the sheet’s link.
+3. Use the `googlesheets4` package:
+
+```{r}
+install.packages("googlesheets4")
+library(googlesheets4)
+
+url <- "https://docs.google.com/spreadsheets/d/your_id_here/edit?usp=sharing"
+my_data <- read_sheet(url)
+
+head(my_data)
+```
+
+---
+
+## 2. **GitHub Datasets (Simple Version)**
+
+To get a dataset from GitHub:
+
+1. Go to the repository where the data is stored.
+2. Click on the CSV file you want.
+3. Click **Raw** (top right).
+4. Copy the link in your browser.
+5. Use it directly in `read_csv()`.
+
+Example:
+
+```{r}
+library(readr)
+
+#This is one way to get your data, be ready in the future if other methods are needed.
+
+url <- "https://raw.githubusercontent.com/username/repo/main/data.csv"
+my_data <- read_csv(url)
+head(my_data)
+```
+
+---
+
+### **Mini Practice: Calm Exploration**
+
+1. Open [palmerpenguins on GitHub](https://github.com/allisonhorst/palmerpenguins).
+2. Inside `data-raw/`, find **penguins\_raw\.csv**.
+3. Click **Raw** and copy the link.
+4. In Posit Cloud:
+
+```{r}
+library(readr)
+
+url <- "PASTE_YOUR_RAW_LINK_HERE"
+penguins <- read_csv(url)
+
+head(penguins)
+nrow(penguins)
+```
+
+Goal:
+
+* Show the first 6 rows (`head()`).
+* Count how many rows there are (`nrow()`).
+
+*No boss this time – just practice and confidence building.*
+
+---
+
+## 3. **Intro to Web Scraping**
+
+Scraping lets you collect data from web pages.
+We use the `rvest` package:
+
+```{r}
+install.packages("rvest")
+library(rvest)
+
+url <- "https://rvest.tidyverse.org/articles/starwars.html"
+page <- read_html(url)
+
+# Grab all headings (h2)
+headings <- page %>% html_nodes("h2") %>% html_text()
+headings
+```
+
+**Try it:**
+
+* Replace `url` with another site and see what you can collect.
+
+---
+
+### End of Chapter Reflection
+
+At this point, students should:
+
+* Know how to pull data from Google Sheets
+* Know how to fetch datasets from GitHub
+* Have a basic introduction to web scraping
+* Be ready for **Chapter 2: Data Wrangling**
+
+Here’s a **small curated table of beginner-friendly public datasets** you can include at the end of your **Chapter 1 Backend – “The Path of Data Gathering”** section.
+These are **ready-to-use links** so your students can copy-paste them directly into `read_csv()` or `read_sheet()` for practice.
+
+---
+
+## **Practice Datasets: Beginner-Friendly Sources**
+
+| **Dataset**                | **Description**                               | **Type**     | **Direct Link (CSV/Sheet)**                                                                                               |
+| -------------------------- | --------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **Palmer Penguins**        | Data about penguins (species, size, island)   | CSV (GitHub) | [penguins\_raw.csv](https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins_raw.csv)   |
+| **Gapminder**              | Country stats over time (life exp, GDP, etc.) | CSV (GitHub) | [gapminder.csv](https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv) |
+| **Titanic (training set)** | Titanic passenger information                 | CSV (GitHub) | [train.csv](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)                                |
+| **Iris dataset (classic)** | Flower species measurements                   | CSV (GitHub) | [iris.csv](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv)                                   |
+| **Google Sheet Example**   | Sample fruit sales data (for Sheets practice) | Google Sheet | [Fruit Sales](https://docs.google.com/spreadsheets/d/1G8Yl-LDYNUHRsN_gmJSrrJXj6O0JQwIV2SbiT8pq2p8/edit?usp=sharing)       |
+
+---
+
+### **Practice Ideas for Students**
+
+* Use `read_csv()` to pull at least 2 datasets into Posit Cloud.
+* Use `head()` and `nrow()` to explore them.
+* Try making a **Google Sheet** of your own small dataset (3 columns, 10 rows) and load it using `read_sheet()`.
+
+```{r}
+
+
+```
+
+---
+
+
+# **Add-On: Math Foundations in R – Why We Start with Numbers**
+
+Before we dive deeper into pulling data from all over the internet, let’s talk about **why R was built for math** and why those small functions you just learned (`mean()`, `median()`, etc.) are so powerful.  
+
+This is the **new power-up you gain after learning to gather data** – now you learn how to look at the data.
+
+---
+
+## **Why Math Comes First in Data Science**
+
+Data Science is more than just collecting data.  
+If you can’t **summarize and understand numbers**, the data will overwhelm you.
+
+R was built for **statistics**, so it gives us tools to:
+
+* Summarize large sets of numbers
+* Spot patterns
+* Detect outliers
+* Understand the “shape” of data
+
+---
+
+## **Math Functions You Must Master**
+
+### **1. `mean()` – The Average**
+The sum of all values divided by how many there are.  
+
+Use when you want a **center point** of your data.
+
+```{r}
+scores <- c(80, 90, 100)
+mean(scores)
+# (80 + 90 + 100) / 3 = 90
+```
+
+
+### **2. `median()` – The Middle Value**
+
+Unlike mean, the median finds the **middle value** when numbers are sorted.
+
+This is useful when your data has extreme values (outliers) that would skew the mean.
+
+```{r}
+median(scores)
+# Middle number = 90
+```
+
+---
+
+### **3. `sum()` – Total**
+
+Adds up all the values.
+
+```{r}
+sum(scores)
+# 270
+```
+
+---
+
+### **4. `min()` and `max()` – Range of Values**
+
+```{r}
+min(scores)  # 80
+max(scores)  # 100
+```
+
+These give you **the lowest and highest value** in your dataset.
+
+---
+
+### **5. `sd()` – Standard Deviation**
+
+This measures **how spread out the numbers are**.
+Small `sd()` = numbers are close to the mean.
+Large `sd()` = numbers are spread out.
+
+```{r}
+sd(scores)
+```
+
+This is **critical in data science** to see if your data is consistent or varied.
+
+---
+
+### **6. `summary()` – The Quick Overview**
+
+This function gives you **a snapshot** of the dataset’s key statistics:
+
+```{r}
+summary(scores)
+```
+
+Output includes Min, 1st Qu., Median, Mean, 3rd Qu., Max.
+
+---
+
+## **Why This Matters Before Cleaning Data**
+
+Before you clean, transform, or visualize, you **need to understand your dataset at a glance**.
+Math is the fastest way to:
+
+* See where errors might exist
+* Understand distributions
+* Decide what to focus on
+
+---
+
+## **Mini Boss Setup – The Statistician’s Ghost**
+
+When you face the ghost at the end of Chapter 1 (front-end), remember:
+
+* The dataset (like `mtcars`) will try to hide its secrets.
+* **Numbers reveal the truth.**
+
+**You will use these functions as your weapons.**
+
+---
+
+## **Pro Tip: Built-in Datasets for Practice**
+
+Here are a few datasets already in R:
+
+* `mtcars`
+* `iris`
+* `ToothGrowth`
+* `PlantGrowth`
+
+You can explore them with:
+
+```{r}
+head(mtcars)
+summary(iris)
+```
+
+---
+
+### **Connecting Back to Data Gathering**
+
+Once you pull data from Google Sheets, GitHub, or scrape it, your **first step is always**:
+
+1. Look at a few rows (`head()`)
+2. Count the rows (`nrow()`)
+3. Use **math functions** to summarize key numeric columns
+
+This builds intuition before you even start cleaning.
+
+---
+
+# **Reflection**
+
+Math isn’t just numbers — it’s a lens.
+Every dataset you collect will first speak to you through these functions.
+
+Up next:
+
+> **Chapter 2 – Cleaning and Preparing Data**
+
+

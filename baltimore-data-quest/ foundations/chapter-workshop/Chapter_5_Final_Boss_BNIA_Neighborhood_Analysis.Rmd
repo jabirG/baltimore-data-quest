@@ -1,0 +1,114 @@
+---
+
+title: "Chapter 5: Final Boss — BNIA Neighborhood Analysis"
+author: "Jabir Ghaffar"
+date: "2025-08-01"
+output: html\_document
+----------------------
+
+# 🧠 Chapter 5: Final Boss — Neighborhood Deep Dive
+
+> **Rank:** S-Rank
+> **Difficulty:** Advanced 🔥🔥🔥🔥🔥
+> **Points Possible:** 200 DP
+
+---
+
+## 🎬 The Final Act
+
+After your journey through R — from wrangling data to visualizing insights — the final boss appears: a **corrupt overseer of Baltimore neighborhoods**. Twisting data to hide disparities, they’ve blurred the truths behind housing, internet access, safety, and investment in our city.
+
+You’ve learned the tools to fight back.
+
+Now, it’s time to **analyze your neighborhood** with real BNIA data, craft your own data-driven question, and reveal a compelling story that exposes or celebrates the truths of your chosen CSA (Community Statistical Area).
+
+---
+
+## 🧩 Project Structure
+
+This is your **first full project** as a data scientist. You’ve been equipped with the training — now it’s up to you to decide:
+
+* What neighborhood matters to you?
+* What question will guide your analysis?
+* What insights will you discover and visualize?
+
+You may pull from:
+
+* BNIA Excel sheets
+* External public data sources (optional)
+
+> ⚠️ **Reminder**: Download the categories you want from [BNIA’s Vital Signs Data](https://bniajfi.org/vital-signs/). Clean your data. Think deeply.
+
+---
+
+## 🛠️ Expected Tools
+
+You are expected to use skills from all previous chapters and side quests:
+
+✅ `tidyverse` functions: `filter()`, `mutate()`, `group_by()`, `summarize()`
+✅ `lubridate`, `janitor`, and proper use of the pipe `|>`
+✅ `ggplot2`: Create at least **two meaningful visuals** with proper labeling and customization
+✅ One **statistical insight** using `mean()`, `median()`, or other math-based function
+✅ A written explanation or mini-report interpreting your findings
+
+---
+
+## 🧙‍♂️ Final Boss: The Shadow of Data
+
+> **Name:** Corvexus Null
+>
+> **Backstory:** Once a data guardian, Corvexus grew obsessed with **manipulating reality** through incomplete statistics. He hides systemic issues by selectively showing data — and it’s up to you to defeat him by revealing the **truth** of your CSA.
+
+---
+
+## 🎓 Submission Format
+
+You will submit:
+
+* An `.Rmd` or `.html` report formatted like a professional data product.
+* Screenshots or links to BNIA data sources you used.
+* A 3-minute presentation (optional but encouraged) explaining your findings.
+
+---
+
+## 🏁 Grading Rubric (S-Rank Boss)
+
+| **Category**              | **Points** | **Requirements**                                                    |
+| ------------------------- | ---------- | ------------------------------------------------------------------- |
+| Code Quality              | 40 DP      | Proper formatting, readable, comments added                         |
+| Data Cleaning             | 20 DP      | Clear evidence of cleaning/prep before analysis                     |
+| Exploratory Analysis      | 30 DP      | Grouping, filtering, summarizing relevant columns                   |
+| Visualizations            | 40 DP      | At least two clean and thoughtful charts, labeled properly          |
+| Interpretation & Insights | 40 DP      | Written narrative that explains findings and data significance      |
+| Creativity + Effort       | 20 DP      | Unique approach, bonus for external datasets, powerful storytelling |
+| **Total**                 | **200 DP** |                                                                     |
+
+> 🏅 **Graduation-Ready Submissions** should hit **180 DP+**
+
+
+> "We all start as students of the data, but the goal is to become storytellers of truth."
+
+---
+
+## 🧭 Return to Main Curriculum
+
+* [Chapter 1: BNIA + R Intro](#)
+* [Chapter 2: Cleaning & Preparing Data](#)
+* [Chapter 3: Transforming & Exploring](#)
+* [Chapter 4: Visualization Mastery](#)
+* [🏁 Final Boss: Chapter 5 — You Are the Analyst](#)
+
+---
+
+**Good luck, graduate.**
+
+Let the data guide you.
+
+```{r}
+# Write your setup here:
+library(tidyverse)
+library(janitor)
+library(lubridate)
+
+# You know what to do 👇
+```

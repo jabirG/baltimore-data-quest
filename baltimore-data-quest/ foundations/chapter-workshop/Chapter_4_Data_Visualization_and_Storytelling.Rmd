@@ -1,0 +1,194 @@
+---
+title: "Chapter 4 – Data Visualization & Storytelling"
+author: "Jabir Ghaffar"
+date: "2025-08-01"
+output: html_document
+
+# 🎨 Chapter 4 – Data Visualization & Storytelling
+
+In this chapter, we will explore the **power of visualization** using `ggplot2` (part of the tidyverse).  
+This is where numbers and data **become visual stories** that others can understand at a glance.
+
+---
+
+## 🎯 Main Objective
+
+By the end of this chapter, you will:
+
+- Use `ggplot2` to create different visualizations  
+- Understand why we choose specific `geoms` for different situations  
+- Make decisions based on data patterns, not just tables  
+- Prepare for **Side Quests** on trend prediction and customization
+
+---
+
+# 🏹 Stage 1 – Why Visualization?
+
+Numbers in a table can feel like a forest where you can’t see the trees.  
+**Plots are your map.** They help you:
+
+- Spot **trends** (e.g., is something increasing or decreasing?)
+- Spot **outliers** (something that stands out as unusual)
+- Spot **patterns** (relationships between two or more variables)
+
+We will use **`ggplot2`** because it is:
+- Consistent, flexible, and powerful
+- Built on the “grammar of graphics” idea
+
+---
+
+# 🏹 Stage 2 – Basic Structure of ggplot2
+
+We will always use this **pipeline** style:
+
+```{r}
+data |>
+  ggplot(aes(x = variable1, y = variable2)) |>
+  geom_point()
+```
+
+* `data` = your dataset
+* `aes()` = aesthetic mapping (what goes on the x/y axes)
+* `geom_*` = the type of visualization (points, bars, etc.)
+
+---
+
+## 10 Commonly Used Geoms
+
+1. `geom_point()` – scatter plots
+2. `geom_bar()` – bar charts
+3. `geom_col()` – bar charts with explicit y-values
+4. `geom_histogram()` – histograms
+5. `geom_boxplot()` – boxplots (spread of data)
+6. `geom_line()` – line charts (trends over time)
+7. `geom_area()` – filled line plots
+8. `geom_smooth()` – trend lines
+9. `geom_violin()` – distribution shapes
+10. `geom_density()` – smooth distributions
+
+*(There are many more! We’ll also see when to use these in practice.)*
+
+---
+
+# 🏹 Stage 3 – Example: Scatter Plot with `mpg` dataset
+
+We’ll use the built-in `mpg` dataset.
+We want to see if **engine size (displ)** affects **highway mileage (hwy)**.
+
+```{r}
+library(ggplot2)
+
+mpg |>
+  ggplot(aes(x = displ, y = hwy)) |>
+  geom_point()
+```
+
+---
+
+## Discussion
+
+* Scatter plots (`geom_point()`) are perfect for **relationships between two numeric variables.**
+* Look for patterns: is hwy going down as engine size increases?
+
+---
+
+# 🏹 Stage 4 – Adding Color
+
+We can add a **third variable** visually by mapping a color:
+
+```{r}
+mpg |>
+  ggplot(aes(x = displ, y = hwy, color = class)) |>
+  geom_point()
+```
+
+Now you can see **different car classes**.
+
+---
+
+# 🏹 Stage 5 – Adding a Trend Line
+
+Sometimes data looks noisy.
+We can add a **trend line** with `geom_smooth()`:
+
+```{r}
+mpg |>
+  ggplot(aes(x = displ, y = hwy, color = class)) |>
+  geom_point() |>
+  geom_smooth(se = FALSE)
+```
+
+---
+
+# ❗ Mini Boss – **The Critic**
+
+The Critic says:
+
+> "You have all these numbers… but can you show me a story?
+> Make a plot that shows:
+>
+> * Which variables are related
+> * A clear trend
+> * A clear title and labels
+> * Use at least 2 geoms (like `geom_point()` and `geom_smooth()`)."
+
+**Task:**
+
+Use **any dataset you want**.
+Create a **beautiful plot** showing a relationship and trend.
+
+---
+
+**Submit:**
+
+* A plot that tells a clear story
+* Title and labels
+* 2 geoms in one visualization
+
+**Points:** 75 DP
+
+---
+
+# 🧠 Recap
+
+* You learned how to use `ggplot2` to visualize relationships
+* You know when to choose `geom_point()`, `geom_line()`, etc.
+* You created a **plot that tells a story**
+
+---
+
+# 🧭 Side Quest Previews
+
+## Side Quest: Market Trends & Prediction (Advanced – 100 DP)
+
+Use advertising spend data (TV, radio, newspaper) to **predict sales trends**
+and analyze which advertising method is most effective.
+
+## Side Quest: Plot Customization & Styling (Advanced – 100 DP)
+
+Learn to make **plots visually stunning and accessible** with:
+
+* Color customization
+* Accessibility palettes
+* Interactive features
+
+---
+
+# Next Chapter
+
+**Chapter 5: Becoming a Data Scientist – Modeling & Final Boss**
+Here we bring everything together:
+
+* Data cleaning
+* Transformation
+* Visualization
+* Statistical modeling
+  …to **defeat the Final Boss.**
+
+
+## Flow:
+
+1. **Stages gradually build skills**  
+2. **Mini Boss tests everything learned so far**  
+3. Prepares students for **Chapter 5 Final Boss**  
+

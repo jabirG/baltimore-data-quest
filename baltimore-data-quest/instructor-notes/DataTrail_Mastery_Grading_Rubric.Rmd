@@ -1,0 +1,97 @@
+---
+title: "DataTrail Mastery Grading Rubric"
+author: "Jabir Ghaffar"
+date: "2025-08-01"
+output: html\_document
+---
+
+# 🔺 DataTrail Mastery Grading Rubric
+
+This rubric governs all grading criteria for:
+
+-   Front-End Chapters (1–5)
+-   Back-End Chapters (1–5)
+-   Side Quests (Beginner to Advanced)
+-   Final Boss Project
+
+It also maps total Data Points (DP) to mastery **Ranks** inspired by the Solo Leveling system—but redesigned to reflect **DataTrail growth, grit, and clarity**.
+
+------------------------------------------------------------------------
+
+## 🌟 Mastery Rank System (DataTrail Edition)
+
+| **Rank** | **Total DP** Range | **Meaning** |
+|----|----|----|
+| **S Rank** | 950–1000+ | Full mastery. Clean, creative, and clear. A student others look up to. |
+| **A Rank** | 850–949 | Advanced fluency. Solid technical, creative, and narrative control. |
+| **B Rank** | 700–849 | Good understanding. Missed small pieces or lacked storytelling clarity. |
+| **C Rank** | 600–699 | Understands basics. Some growth still needed with consistency. |
+| **D Rank** | 500–599 | Effort is visible, but foundational gaps need to be filled. |
+| **F Rank** | Below 500 | Needs major reinforcement. Likely skipped material or rushed. |
+
+> 🎓 Ranks are announced at graduation and shown with each student's final boss project.
+
+------------------------------------------------------------------------
+
+## ✨ Front-End Chapter Rubric (Ch. 1–4)
+
+Each is worth **100 DP**
+
+| **Criteria** | **Description** | **Points** |   |
+|----|----|----|----|
+| Code Accuracy | Functions run without error, demonstrate chapter concepts | 25 |  |
+| Syntax + Readability | Indentation, \` | \>\` use, object naming, spacing | 15 |
+| Core Concept Usage | Uses functions like `filter()`, `mutate()`, `ggplot()` correctly | 25 |  |
+| Mini Boss Completion | Final code chunk solved correctly with brief narrative | 25 |  |
+| Reflection or Comments | Student shows understanding through code comments or written reflection | 10 |  |
+
+------------------------------------------------------------------------
+
+## 🏛️ Final Boss Rubric (Chapter 5)
+
+Worth **200 DP**
+
+| **Criteria** | **Description** | **Points** |
+|----|----|----|
+| Question + Hypothesis | Neighborhood focus, clear goal stated | 25 |
+| BNIA Data Integration | Imports, joins, and filters data correctly | 40 |
+| Transformation and Cleaning | Uses dplyr to prep the dataset meaningfully | 30 |
+| ggplot2 Visualization | At least 1 visual; clear, styled, and insightful | 30 |
+| Interpretation | Strong final reflection or narrative insight | 25 |
+| R Markdown Quality | Knits successfully; readable layout and formatting | 25 |
+| Bonus Flair | Added creativity, interactivity, or going beyond | Optional +25 |
+
+------------------------------------------------------------------------
+
+## ⚙️ Back-End Chapter Rubric (Each = 40 DP)
+
+| **Criteria** | **Description** | **Points** |
+|----|----|----|
+| Summary or Self-Note | Student explains what they learned | 10 |
+| Replication of Examples | Attempts core code and gets it working | 15 |
+| Experimentation | Modifies code or explores other functions | 10 |
+| Questions or Curiosity | Asks a real or thoughtful question | 5 |
+
+------------------------------------------------------------------------
+
+## 🚪 Side Quest Grading + Difficulty Tiers
+
+| **Difficulty** | **Rank** | **DP Range** | **Examples** |
+|----|----|----|----|
+| Beginner | D Rank | 20–30 DP | Importing data, finding data online, working with `read_csv()` |
+| Intermediate | C/B Rank | 30–45 DP | Customizing plots, predicting sales, basic joining |
+| Advanced | A Rank | 50–60 DP | Market prediction side quest, interactivity, dashboard elements |
+
+------------------------------------------------------------------------
+
+## 💡 Final Thoughts
+
+> "You don't need to be perfect. You just need to show the work, reflect on it, and grow from it."
+
+By the end of this course, your **Data Points = Your Story**. Whether you land in B, A, or S rank, your projects will speak for themselves.
+
+Let the numbers show the journey. You earned every line of code.
+
+------------------------------------------------------------------------
+
+Ready to assess your standing? Keep collecting Data Points and rise through the ranks.

@@ -1,0 +1,11 @@
+---
+title: "Instructor Notes"
+author: "Jabir Ghaffar"
+date: "2025-07-30"
+output: html_document
+---
+
+## Chapter 1 front-end and back-end
+
+
+SOme barriers how the original curriculum is on a seperate 

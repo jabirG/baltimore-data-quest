@@ -1,0 +1,181 @@
+---
+title: "Chapter 03: Data Transformation & Exploration"
+author: "Jabir"
+date: "2025-07-30"
+output: html_document
+---
+
+# 🎭 Chapter 03 – Data Transformation & Exploration
+
+Welcome to the **Hall of Insight**.
+
+You’ve cleared the fog around your data, but now something lurks in the corridors of your cleaned dataset:\
+**patterns hidden across time, genre, language, and popularity.**
+
+To face the Phantom of Patterns, you need to **group, summarize, and visualize** your data so you can see what was invisible before.
+
+------------------------------------------------------------------------
+
+**Create a code chunk and read in your movie dataset below**
+
+```{r}
+movies <- read_csv("https://raw.githubusercontent.com/jabirG/Tidy-Tuesday-Horror-Movies-Dataset/refs/heads/main/horror_movies.csv")
+
+```
+## 🎯 Objectives for This Chapter
+
+By the end of this chapter, you’ll be able to:
+
+1.  Group data with `group_by()`.
+2.  Summarize patterns with `summarise()`.
+3.  Create new columns with `mutate()`.
+4.  Use `arrange()` and `count()` to organize insights.
+5.  Make your **first visualization using ggplot2**.
+6.  Defeat the **Phantom of Patterns**.
+
+------------------------------------------------------------------------
+
+# 🗺️ Stage 1: Grouping & Summarizing
+
+The Phantom of Patterns scatters insights across categories.\
+To fight back, you must **bring order**.
+
+------------------------------------------------------------------------
+
+## 🧩 Exercise: Average Revenue by Genre
+
+Using your **movies dataset**:
+
+```{r}
+movies |>
+  group_by(genre_names) |>
+  summarise(avg_revenue = mean(revenue, na.rm = TRUE))
+```
+> **Data Points Earned: 10**
+> *(Beginner – Grouping and Summarizing)*
+
+---
+
+# 🛠 Stage 2: Create New Powers with `mutate()`
+
+Sometimes the raw data isn’t enough. You need **derived columns**.
+
+---
+
+## 🧩 Exercise: Create a Profit Column
+
+```{r}
+movies |>
+  mutate(profit = revenue - budget) |>
+  arrange(desc(profit))
+```
+
+Now you can see the **biggest hits**!
+
+> **Data Points Earned: 15** *(Intermediate – Derived Variables)*
+
+------------------------------------------------------------------------
+
+# 🏷 Stage 3: Count and Rank
+
+The Phantom thrives on **overwhelming numbers**. Use `count()` to see where the data clusters.
+
+------------------------------------------------------------------------
+
+### Count Original Languages
+
+```{r}
+movies |>
+  count(original_language, sort = TRUE)
+```
+
+------------------------------------------------------------------------
+
+# 🎨 Stage 4: The Weapon of Sight – `ggplot2`
+
+Visualization lets you **see the Phantom’s shape**.
+
+We’ll look at **popularity trends over time**.
+
+```{r}
+library(ggplot2)
+library(lubridate)
+
+movies |>
+  mutate(year = year(release_date)) |>
+  ggplot(aes(x = year, y = popularity)) +
+  geom_point(alpha = 0.3) +
+  theme_minimal()
+```
+
+> **Data Points Earned: 20** *(Intermediate – First Visualization)*
+
+------------------------------------------------------------------------
+
+# ⚔️ Mini-Boss Fight – The Phantom of Patterns
+
+**Description:** The Phantom confuses you by spreading patterns across genres, languages, and years. To beat it, **spot trends that aren’t obvious just by looking at rows**.
+
+------------------------------------------------------------------------
+
+### **Your Mission**
+
+**Objective:** Create a small report answering these:
+
+1.  Which genre has the **highest average profit**?
+2.  In what **year** were movies most popular (average popularity)?
+3.  Does **language** seem to affect average vote_average?
+
+**Instructions:**
+
+1.  Use `mutate()` to create a profit column.
+2.  Use `group_by()` + `summarise()` to answer each question.
+3.  Create at least **one ggplot** to visualize a trend you discover.
+
+You can work in **chunks**:
+
+```{r}
+# Example skeleton
+movies |>
+  mutate(profit = revenue - budget) |>
+  group_by(genre_names) |>
+  summarise(avg_profit = mean(profit, na.rm = TRUE)) |>
+  arrange(desc(avg_profit))
+```
+
+When you’ve extracted **3 insights**, the Phantom dissipates.
+
+------------------------------------------------------------------------
+
+### **Reward for Victory**
+
+-   **40 Data Points**
+-   Badge: **Pattern Breaker**
+
+------------------------------------------------------------------------
+
+# 🧠 Reflection
+
+Write down:
+
+-   One insight that surprised you.
+-   One function you now feel comfortable using.
+-   One function that still confuses you.
+
+------------------------------------------------------------------------
+
+# 📜 End of Chapter 3
+
+You’ve learned:
+
+-   How to group, summarize, and visualize data
+-   How to **make patterns visible**
+-   How to build a report to fight confusion
+
+------------------------------------------------------------------------
+
+**Prepare for Chapter 4:** In the next chapter, we’ll **level up your visual skills** and learn how to communicate your findings as a story using advanced `ggplot2` techniques.
+
+**Next:**
+
+> Chapter 4 – *Visual Storytelling with ggplot2*

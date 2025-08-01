@@ -5,15 +5,13 @@ date: "2025-07-22"
 output: html_document
 ---
 
-Every story has layers—what’s shown, what’s hidden, and what it reveals about the real world.”
-Use shows like The Sandman to illustrate how media personifies abstract concepts. Dream, Death, and Delirium are not just characters—they represent core forces in life. Ask students: “If ‘Desire’ were a dataset, what data points would describe them? How would you measure ‘Dreams’ or ‘Fear’?” This ties imagination to data science.
+Every story has layers—what’s shown, what’s hidden, and what it reveals about the real world.” Use shows like The Sandman to illustrate how media personifies abstract concepts. Dream, Death, and Delirium are not just characters—they represent core forces in life. Ask students: “If ‘Desire’ were a dataset, what data points would describe them? How would you measure ‘Dreams’ or ‘despair’?” This ties imagination to data science.
 
 Who made this content?
 
 What’s the goal?
 
-What sources or narratives are missing?
-This develops the critical eye needed for clean, neutral analysis.
+What sources or narratives are missing? This develops the critical eye needed for clean, neutral analysis.
 
 # You are not just learning code. You are becoming a detective of truth.
 
@@ -23,12 +21,11 @@ This develops the critical eye needed for clean, neutral analysis.
 
 You're not just teaching students how to code—you’re teaching them how to **think**, **feel empowered**, and **make meaningful decisions**. We can frame this around:
 
-1. **Mindset** = How they *approach* learning and failure
-2. **Motivation** = Why they *keep going*
-3. **Clarity** = Seeing their goals and thinking clearly
-4. **Transparency** = Being honest with themselves and the data
-5. **Mind-Body Connection** = Grounding tech learning in real-world *self-awareness* and balance
-
+1.  **Mindset** = How they *approach* learning and failure
+2.  **Motivation** = Why they *keep going*
+3.  **Clarity** = Seeing their goals and thinking clearly
+4.  **Transparency** = Being honest with themselves and the data
+5.  **Mind-Body Connection** = Grounding tech learning in real-world *self-awareness* and balance
 
 ### 🧠 1. MINDSET – "The World Is a Sandbox, Not a Test"
 
@@ -38,11 +35,11 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 **Deeper Explanation**:
 
-* Compare the mindset of a student who thinks they must get everything right to someone playing a sandbox game (like *Minecraft* or *Roblox*). In those games, failure is just another part of building.
-* Introduce the idea of a “growth mindset” (from Carol Dweck’s work): Your brain gets stronger *through* challenge.
-* Quote: *"There is no failure, only feedback."*
+-   Compare the mindset of a student who thinks they must get everything right to someone playing a sandbox game (like *Minecraft* or *Roblox*). In those games, failure is just another part of building.
+-   Introduce the idea of a “growth mindset” (from Carol Dweck’s work): Your brain gets stronger *through* challenge.
+-   Quote: *"There is no failure, only feedback."*
 
----
+------------------------------------------------------------------------
 
 ### 🔥 2. MOTIVATION – "Know Your Why"
 
@@ -52,11 +49,11 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 **Deeper Explanation**:
 
-* Ask students to write down why they joined this training.
-* Help them identify intrinsic vs. extrinsic motivation. (Do they want to help their community? Do they love solving problems? Or is this just for a job?)
-* Motivate them with **data stories**—like Baltimore’s equity indicators and how data has been used to change policy.
+-   Ask students to write down why they joined this training.
+-   Help them identify intrinsic vs. extrinsic motivation. (Do they want to help their community? Do they love solving problems? Or is this just for a job?)
+-   Motivate them with **data stories**—like Baltimore’s equity indicators and how data has been used to change policy.
 
----
+------------------------------------------------------------------------
 
 ### 🔍 3. CLARITY – "Don’t Chase Fog"
 
@@ -66,11 +63,11 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 **Deeper Explanation**:
 
-* Teach students to zoom out before diving in: What problem are they trying to solve? What would success look like in their own words?
-* Use examples of how messy problems (like ‘Why do people leave Baltimore?’) become clearer with **data framing.**
-* Show how clarity is built step-by-step (e.g., asking better questions → choosing better indicators → telling better stories).
+-   Teach students to zoom out before diving in: What problem are they trying to solve? What would success look like in their own words?
+-   Use examples of how messy problems (like ‘Why do people leave Baltimore?’) become clearer with **data framing.**
+-   Show how clarity is built step-by-step (e.g., asking better questions → choosing better indicators → telling better stories).
 
----
+------------------------------------------------------------------------
 
 ### 💬 4. TRANSPARENCY – "Be Real with the Data and Yourself"
 
@@ -80,11 +77,11 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 **Deeper Explanation**:
 
-* Teach the ethical side of data. Data can be twisted if you're not transparent about your methods or limitations.
-* Talk about uncertainty, how to communicate confidence, and when to say, “I don’t know.”
-* Encourage them to check their own bias. “Are you seeing what’s there, or what you *want* to see?”
+-   Teach the ethical side of data. Data can be twisted if you're not transparent about your methods or limitations.
+-   Talk about uncertainty, how to communicate confidence, and when to say, “I don’t know.”
+-   Encourage them to check their own bias. “Are you seeing what’s there, or what you *want* to see?”
 
----
+------------------------------------------------------------------------
 
 ### 🧘🏾 5. MIND-BODY CONNECTION – "Code With Your Whole Self"
 
@@ -94,11 +91,11 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 **Deeper Explanation**:
 
-* Introduce stretch breaks, eye exercises, and breathwork into the learning rhythm.
-* Talk about how staying grounded helps reduce burnout and anxiety when code isn’t working.
-* Compare the flow state in coding to the focus state in martial arts or dance—clear mind, intentional movement.
+-   Introduce stretch breaks, eye exercises, and breathwork into the learning rhythm.
+-   Talk about how staying grounded helps reduce burnout and anxiety when code isn’t working.
+-   Compare the flow state in coding to the focus state in martial arts or dance—clear mind, intentional movement.
 
----
+------------------------------------------------------------------------
 
 ### 🌟 Optional Side Quest: Media Perspective Module
 
@@ -106,11 +103,14 @@ You're not just teaching students how to code—you’re teaching them how to **
 
 #### Key Learning Activities:
 
-* Watch a TV episode like *The Sandman* (especially one about Dream or Delirium).
-* Break it down: What is this character teaching us about reality, emotion, or perception?
-* Transition into *media literacy*:
+-   Watch a TV episode like *The Sandman* (especially one about Dream or Delirium).
 
-  * How to identify bias in news
-  * The role of source-checking
-  * How algorithms shape what we believe
-* Final takeaway: **“Coding is power. Don’t just consume the world—understand it, question it, build it.”**
+-   Break it down: What is this character teaching us about reality, emotion, or perception?
+
+-   Transition into *media literacy*:
+
+    -   How to identify bias in news
+    -   The role of source-checking
+    -   How algorithms shape what we believe
+
+-   Final takeaway: **“Coding is power. Don’t just consume the world—understand it, question it, build it.”**
