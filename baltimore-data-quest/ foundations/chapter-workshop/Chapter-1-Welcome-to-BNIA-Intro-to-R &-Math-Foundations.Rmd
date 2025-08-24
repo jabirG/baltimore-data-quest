@@ -4,36 +4,37 @@ author: "Jabir Ghaffar"
 date: "2025-07-30"
 output: html_document
 ---
+
 # 🎮 Stage 1: Welcome + Using the BNIA Website
 
-Welcome to your **first adventure** as a data explorer!  
+Welcome to your **first adventure** as a data explorer!\
 This is where you learn that **real-world data lives in places like BNIA (Baltimore Neighborhood Indicators Alliance).**
 
-> **BNIA Website:** [https://bniajfi.org](https://bniajfi.org)
+> **BNIA Website:** <https://bniajfi.org>
 
----
+------------------------------------------------------------------------
 
 ## 🕹️ Mini-Mission: Explore the BNIA Website
 
-1. Visit **BNIA**.
-2. Click on **"Vital Signs"**.
-3. Locate your **Community Statistical Area (CSA)**.
-4. Browse through different **Indicators** — pick one that interests you.
+1.  Visit **BNIA**.
+2.  Click on **"Vital Signs"**.
+3.  Locate your **Community Statistical Area (CSA)**.
+4.  Browse through different **Indicators** — pick one that interests you.
 
 *This step is about getting familiar with where data comes from, not analyzing it yet.*
 
 > **Data Points Earned: 10** *(Beginner – Familiarization)*
 
----
+------------------------------------------------------------------------
 
 # ⚔️ Stage 2: Why Learn R?
 
-R is a programming language made **specifically for statistics and data**.  
+R is a programming language made **specifically for statistics and data**.\
 Before we analyze Baltimore data, we must learn the **language of numbers**.
 
 > Data scientists are like detectives: R is your magnifying glass, and math is your logic.
 
----
+------------------------------------------------------------------------
 
 # 🏗 Stage 3: Assigning Values – Objects
 
@@ -50,7 +51,7 @@ The most basic thing in R: **assignment**.
 
 ```
 
----
+------------------------------------------------------------------------
 
 # 📊 Stage 4: Math in R
 
@@ -74,25 +75,25 @@ R was made for math. Try these using the `scores` object from the backend chapte
 
 ```
 
-These **built-in functions** will be your best friends.
-Anytime you have a set of numbers, you can summarize them quickly.
+These **built-in functions** will be your best friends. Anytime you have a set of numbers, you can summarize them quickly.
 
 > **Pro Tip:** Never be afraid of math in R. The language was created for it.
 
----
+------------------------------------------------------------------------
 
 # 🧩 Quick Practice
 
 Try:
 
-1. Create an object called `ages` with 5 numbers of your choice.
-2. Use `mean()`, `median()`, and `sd()` on `ages`.
+1.  Create an object called `ages` with 5 numbers of your choice.
+2.  Use `mean()`, `median()`, and `sd()` on `ages`.
 
 ```{r}
 
 
 ```
----
+
+------------------------------------------------------------------------
 
 # 🔮 Stage 5: Using Built-in Data
 
@@ -104,24 +105,22 @@ head(mtcars)
 
 This dataset is about cars: miles per gallon, horsepower, weight, etc.
 
----
+------------------------------------------------------------------------
 
 # 🧙‍♂️ Mini-Boss Fight – The Statistician’s Ghost
 
-**Description:**
-The Statistician’s Ghost tries to confuse you by hiding patterns in **numbers**.
-Your task: use R’s math functions to reveal them.
+**Description:** The Statistician’s Ghost tries to confuse you by hiding patterns in **numbers**. Your task: use R’s math functions to reveal them.
 
----
+------------------------------------------------------------------------
 
 ### **Your Mission**
 
 Using the `mtcars` dataset:
 
-1. Find the **average mpg (miles per gallon)**.
-2. Find the **median horsepower (hp)**.
-3. Find the **minimum and maximum weight (wt)**.
-4. Use `sd()` to see how much mpg varies.
+1.  Find the **average mpg (miles per gallon)**.
+2.  Find the **median horsepower (hp)**.
+3.  Find the **minimum and maximum weight (wt)**.
+4.  Use `sd()` to see how much mpg varies.
 
 Write your answers in a code chunk:
 
@@ -131,24 +130,23 @@ Write your answers in a code chunk:
 
 ```
 
----
+------------------------------------------------------------------------
 
-**Victory Condition:**
-Once you answer all 5, the Ghost vanishes.
+**Victory Condition:** Once you answer all 5, the Ghost vanishes.
 
 **Reward:**
 
-* 40 Data Points
-* Badge: **Math Adept**
+-   40 Data Points
+-   Badge: **Math Adept**
 
----
+------------------------------------------------------------------------
 
 # 🧠 Reflection
 
-* Which math function surprised you?
-* Which one do you think will be most useful in data analysis?
+-   Which math function surprised you?
+-   Which one do you think will be most useful in data analysis?
 
----
+------------------------------------------------------------------------
 
 # 🧙 Next Chapter
 

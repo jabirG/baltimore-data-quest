@@ -7,8 +7,7 @@ output: html_document
 
 # 🎯 Chapter 2 – Cleaning & Preparing Data
 
-Welcome, Data Apprentice!
-You’ve learned how to look at data, but now comes a new trial: **How do you focus when your dataset has *so many columns*?**
+Welcome, Data Apprentice! You’ve learned how to look at data, but now comes a new trial: **How do you focus when your dataset has *so many columns*?**
 
 This chapter is all about **choosing what matters, filtering, and preparing data for your first real insights.**
 
